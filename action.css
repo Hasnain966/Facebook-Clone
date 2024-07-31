@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4267B2;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+.picture{
+    height: 650px;
+}
+
+.user-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.date-time {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.container {
+    padding: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-content {
+    margin: 20px 0;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.like-btn, .comment-btn, .share-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4267B2;
+    font-weight: bold;
+}
+
+.like-btn .fa-heart,
+.comment-btn .fa-comment,
+.share-btn .fa-share {
+    margin-right: 5px;
+}
+
+.like-btn.liked .fa-heart {
+    color: red;
+}
+
+.comments-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.comments-section.active {
+    display: block;
+}
+
+.comment-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-comment-btn {
+    padding: 10px;
+    border: none;
+    background-color: #4267B2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.share-options {
+    display: none;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.share-options.active {
+    display: flex;
+}
+
+.share-options .fa-whatsapp,
+.share-options .fa-tiktok,
+.share-options .fa-instagram,
+.share-options .fa-twitter {
+    font-size: 24px;
+    cursor: pointer;
+}
+.post-content{
+    width: 100%;
+}
+
+.post-content img{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 440px;
+    background-size: cover;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-actions {
+        flex-direction: column;
+    }
+}
